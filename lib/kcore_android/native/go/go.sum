@@ -1,0 +1,4 @@
+github.com/hsfzxjy/android-jni-go v0.1.1 h1:7MoYyv1LwJdK1nMsBcBSAeFdkiqNg6Cva78YFzr81/c=
+github.com/hsfzxjy/android-jni-go v0.1.1/go.mod h1:FigtCkBMDC/ctUogopUWNRDKsYlb90pCqht01AmEpn8=
+github.com/hsfzxjy/smux v1.5.17-0.20220716142752-b0d716d03697 h1:zB49WyymvncwVxa7ANNBXk8SnN9FlgI+Fxw1rqAsNgw=
+github.com/hsfzxjy/smux v1.5.17-0.20220716142752-b0d716d03697/go.mod h1:/Q/URa6T8JvXQmC7uBg8Ncps0Yjnj1gt7zVgYbg4x/Y=

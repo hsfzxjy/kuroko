@@ -1,0 +1,63 @@
+name: kcore_android
+description: Core Component for Kuroko App (Android)
+version: 0.0.1
+homepage: "https://www.hsfzxjy.site/"
+publish_to: none
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+  flutter: ">=2.5.0"
+
+dependencies:
+  ffi: ^1.2.1
+  flutter:
+    sdk: flutter
+  permission_handler: ^10.0.0
+  dart_zoned_task:
+    git:
+      url: https://github.com/hsfzxjy/dart_zoned_task
+      ref: master
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^1.0.0
+  ffigen: ^4.1.3
+  import_sorter: ^4.6.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: site.hsfzxjy.kcore
+        pluginClass: KcoreAndroidPlugin
+
+import_sorter:
+  ignored_files:
+    - ".*binding.*"
+
+ffigen:
+  output: lib/libkcore_generated_binding.dart
+  name: "LibKcore"
+  headers:
+    entry-points:
+      - include/c/for_dart.h
+      - include/go/libkcore.h
+    include-directives:
+      - include/c/for_dart.h
+      - include/go/libkcore.h
+  functions:
+    exclude:
+      - "Java_.*"
+  globals:
+    exclude:
+      - "_.*"
+  macros:
+    exclude:
+      - ".*"
+  structs:
+    exclude:
+      - "_.*"
+  typedefs:
+    include:
+      - "DartCallback"

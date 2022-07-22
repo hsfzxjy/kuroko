@@ -1,0 +1,8 @@
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  rules:
+    non_constant_identifier_names: false
+    constant_identifier_names: false
+    prefer_single_quotes: true
+    prefer_final_locals: true
