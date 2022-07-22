@@ -1,0 +1,35 @@
+name: kuroko
+description: A new Flutter project.
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  kcore_android:
+    path: ../lib/kcore_android/
+  receive_sharing_intent: ^1.4.5
+  device_info_plus: ^3.2.3
+  async: ^2.8.2
+  crypto: ^3.0.1
+  sqflite: ^2.0.2+1
+  loading_indicator: ^3.0.3
+  provider: ^6.0.2
+  logging: ^1.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^1.0.0
+  import_sorter: ^4.6.0
+
+flutter:
+  uses-material-design: true
